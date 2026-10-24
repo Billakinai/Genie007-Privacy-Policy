@@ -1,173 +1,107 @@
 # Privacy Policy
 
-**Effective Date: May 27, 2025**  
-**Version: 1.1**
+**Effective date: 24 October 2026. Version 1.2.** This version replaces version 1.1 of 27 May 2025. The main changes: a plain description of how your voice is processed, the correct statement that Genie 007 stores no recordings and no transcripts, a sub-processor section, UK and EU GDPR rights, and the correct contact address.
 
-At Genie AI, we take your privacy seriously. Please read this Privacy Policy to learn how we treat your personal data. By using our extension, you acknowledge that you accept the practices and policies outlined below, and you consent that we will collect, use, and share your information as described in this Privacy Policy.
+## Who we are
 
-## What We Don't Do
+Genie 007 is made and operated by Bill Kiani, trading as Genie 007, in the United Kingdom ("Genie 007", "we"). We are the data controller for the personal data described in this policy. You can reach us at [support@genie007.com](mailto:support@genie007.com).
 
-- We don't collect your browsing history
-- We don't track your activity outside of our extension's functionality
-- We don't access your data on sensitive domains (financial, banking, payment pages)
-- We don't store your audio recordings beyond the time needed for processing
-- We don't sell your data to third parties
+## What this policy covers
 
-If you believe Genie AI has accessed sensitive data or content outside of your explicit use, please contact us immediately.
+This policy covers the Genie 007 Chrome extension, the Genie 007 apps for Windows and Mac, the website genie007.com and your Genie 007 account. It does not cover the websites and applications you use Genie 007 inside (for example Gmail or LinkedIn), which have their own policies.
 
-## Manifest V3 & Local Execution
+## How Genie 007 processes your voice
 
-Our extension is built on Chrome Manifest V3. All code and UI run locally in your browser under Chrome's Content Security Policy; we do not fetch or execute remote scripts at runtime. Data you store via Chrome's storage APIs remains sandboxed to your device unless you explicitly invoke a feature that sends it to our servers via secure HTTPS connections.
+- **Recording.** Audio is captured on your device only while you hold or toggle the shortcut or press the microphone button, and an indicator shows while recording is active. Nothing is recorded in the background.
 
-## What this Privacy Policy Covers
+- **Processing.** The recording travels over an encrypted connection (TLS) to our backend on Google Cloud and on to our speech-recognition partner, which turns it into text. In Genie mode, your spoken instruction and the context you asked Genie to work with (the text in the field or on the active window, and on the Windows and Mac apps a screenshot of the active window) are sent to our language-model partners, which write the result.
 
-This Privacy Policy covers how we treat Personal Data that we gather when you access or use our extension. "Personal Data" means any information that identifies or relates to a particular individual and also includes information referred to as "personally identifiable information" or "personal information" under applicable data privacy laws.
+- **Result.** The finished text is returned to your device and placed where you were writing. Genie 007 then discards the request.
 
-This Privacy Policy does not cover the practices of companies we don't own or control or people we don't manage.
+- **What we keep: nothing.** Genie 007 does not store your recordings, your transcripts or the text Genie writes, and keeps no history of what you dictate. Our operational logs record that a request happened, its size and whether it succeeded; they contain no audio and no dictated text.
 
-## Personal Data
+- **Our processing partners.** Our speech-recognition and language-model partners process your data only to produce your result. Under the API terms we use they do not use your data to train their models, and they retain it only for the limited abuse-monitoring periods their terms set out (currently between zero and 55 days). The live-preview service used only during the onboarding demo processes audio in real time under its business terms. A current list of our sub-processors is available on request from [support@genie007.com](mailto:support@genie007.com).
 
-### Categories of Personal Data We Collect
+## Information we hold about your account
 
-**Personal Identifiers**
-- Email address
-- Name
-- Account information (when you sign in)
+- **Identity:** your email address, your name and which sign-in method you used (Google, Microsoft, Apple or email).
 
-**Commercial Information**
-- Subscription status and payment history (if you upgrade to a paid plan)
-- Credits used and available
+- **Plan and usage:** your plan, credits used and available, and when you last signed in. If you pay, Stripe holds your payment details; we hold only Stripe's customer and subscription references, never card numbers.
 
-**Audio Data**
-- Voice recordings (deleted within 24 hours of processing)
-- A visual indicator is displayed whenever recording is active
+- **Your settings:** words you add to your personal dictionary, voice snippets you create, your preferences, and anything you choose to tell Genie about yourself in Settings so it can write in your voice.
 
-**Internet/Network Activity**
-- Information about content you explicitly choose to interact with
-- Information about your browser and device to ensure compatibility
+- **Technical information:** which Genie 007 app you use, its version, your browser or operating system version, and an approximate location derived from your IP address, used for security and compatibility.
 
-**Financial Data**
-- Payment methods (processed by our payment provider)
+- **Product analytics:** usage events such as which feature was used, how often, and errors, processed by our analytics provider in pseudonymised form. The desktop apps send crash reports to our error-monitoring provider; these contain technical details and no dictated text.
 
-### Categories of Sources of Personal Data
+- **Support and emails:** messages you send us and your email preferences.
 
-**You**
-- When you provide such information directly to us
-- When you create an account or use our interactive tools
-- When you use our features
-- When you send us an email or otherwise contact us
-- When you use our extension and such information is collected automatically
+## Why we use it
 
-**Third Parties**
-- Authentication providers when you sign in using their services
-- Payment processors when you make purchases
+- To provide the service you signed up for, including processing your dictation and managing your credits (performance of a contract).
 
-### Our Commercial or Business Purposes for Collecting Personal Data
+- To keep the service secure, prevent abuse, fix problems and improve the product (our legitimate interests).
 
-**Providing, Customizing, and Improving the Services**
-- Creating and managing your account
-- Processing orders and transactions
-- Providing you with the AI assistance you request
-- Meeting or fulfilling the reason you provided the information to us
-- Providing support and assistance
-- Improving our extension, including testing, research, and product development
-- Personalizing responses based on your preferences
-- Performing fraud protection, security, and debugging
+- To send you service emails about your account, and, with your consent, occasional product emails. Every marketing email has an unsubscribe link.
 
-**Marketing the Services**
-- Marketing and selling our services
+- To meet legal and tax obligations.
 
-**Corresponding with You**
-- Responding to correspondence that we receive from you
-- Contacting you when necessary
-- Sending you information about Genie AI updates and features
+## Who we share it with
 
-**Meeting Legal Requirements and Enforcing Legal Terms**
-- Fulfilling our legal obligations under applicable law
-- Protecting the rights, property, or safety of you, Genie AI, or another party
-- Enforcing any agreements with you
-- Responding to claims that any usage violates third-party rights
-- Resolving disputes
+We share personal data only with providers that help us run Genie 007, under contracts that restrict what they may do with it: our speech-recognition and language-model partners (described above), Google Cloud and Firebase (hosting, authentication and database), Stripe (payments), our email delivery provider (account and service emails), our analytics and error-monitoring providers, and our website host. We do not sell personal data and we do not share it with advertisers. We may disclose data when the law requires it, to protect our rights or users, or as part of a business transfer.
 
-We will not collect additional categories of Personal Data or use the Personal Data we collected for materially different, unrelated, or incompatible purposes without providing you notice.
+## International transfers
 
-## How We Share Your Personal Data
+Our backend and most of our providers are in the United States. Where personal data leaves the United Kingdom or the European Economic Area, it is protected by the providers' standard contractual clauses and the UK addendum, or by the UK and EU adequacy decisions for the Data Privacy Framework where the provider is certified.
 
-We disclose your Personal Data to the categories of service providers and other parties listed in this section.
+## How long we keep it
 
-**Service Providers**
-- Hosting, technology, and communication providers
-- Payment processors
-  - Our payment processing partner Stripe, Inc. ("Stripe") collects your voluntarily-provided payment card information necessary to process your payment.
-  - Please see Stripe's terms of service and privacy policy for information on its use and storage of your Personal Data.
-- AI processing partners that help provide the voice transcription and response generation features
+- **Recordings, transcripts and generated text:** not stored.
 
-**Analytics Partners**
-- Companies that track how users interact with our extension (anonymized and aggregated data only)
+- **Account data:** for as long as your account is open. When you delete your account, your data is removed within 30 days.
 
-**Parties You Authorize, Access or Authenticate**
-- Third parties you access through the services
-- Other users
+- **Billing records:** as long as tax law requires, normally six years.
 
-**Legal Obligations**
-- We may share any Personal Data that we collect with third parties in conjunction with any of the activities set forth under "Meeting Legal Requirements and Enforcing Legal Terms" in the "Our Commercial or Business Purposes for Collecting Personal Data" section above.
+- **Operational logs:** up to 30 days, with no audio and no dictated text.
 
-**Business Transfers**
-- All of your Personal Data that we collect may be transferred to a third party if we undergo a merger, acquisition, bankruptcy, or other transaction in which that third party assumes control of our business (in whole or in part).
+- **Analytics:** in pseudonymised form for product analytics.
 
-**Data that is Not Personal Data**
-- We may create aggregated, de-identified, or anonymized data from the Personal Data we collect and share it with third parties for our lawful business purposes, provided that we will not share such data in a manner that could identify you.
+## How we protect it
 
-## Tracking Tools & Opt-Out
+All traffic uses TLS encryption. Account data is encrypted at rest by Google Cloud (AES-256). Sign-in uses Firebase Authentication with Google, Microsoft, Apple or a verified email address. Our backend applies rate limits and abuse controls, and access to account data is restricted to the founder. Payment data never passes through our servers.
 
-Our extension uses cookies and similar technologies to enable our servers to recognize your web browser, tell us how and when you visit and use our services, analyze trends, learn about our user base, and operate and improve our services.
+## Your rights
 
-You can decide whether or not to accept Cookies through your internet browser's settings. Most browsers have an option for turning off the Cookie feature, which will prevent your browser from accepting new Cookies, as well as allowing you to decide on acceptance of each new Cookie in a variety of ways. You can also delete all Cookies that are already on your device.
+Under the UK GDPR and the EU GDPR you can ask to access, correct, delete, restrict or export your personal data, object to processing based on our legitimate interests, and withdraw consent at any time. You can also complain to the UK Information Commissioner's Office (ico.org.uk) or your local supervisory authority.
 
-## Data Security and Retention
+**Deleting your account:** use "Delete account" inside the Windows or Mac app or the Chrome extension, which removes your account and its data at once, or email [support@genie007.com](mailto:support@genie007.com). We answer requests within one month and may ask you to confirm your identity first.
 
-We seek to protect your Personal Data from unauthorized access, use, and disclosure using appropriate physical, technical, organizational, and administrative security measures based on the type of Personal Data and how we are processing that data. All data transmission occurs via secure HTTPS connections. You should also help protect your data by appropriately selecting and protecting your password and/or other sign-on mechanism and limiting access to your computer or device and browser.
+## Children
 
-We retain Personal Data about you for as long as you have an open account with us or as otherwise necessary to provide you with our services. Voice recordings and their transcripts are deleted automatically within 24 hours of processing. In some cases, we retain Personal Data for longer, if doing so is necessary to comply with our legal obligations, resolve disputes, or collect fees owed, or is otherwise permitted or required by applicable law, rule, or regulation.
+Genie 007 is not intended for children under 13 and we do not knowingly collect their data. If you believe a child has created an account, contact us and we will delete it.
 
-## Your Data Choices and Rights
+## The Chrome extension
 
-You have the right to request access, correction, or deletion of your Personal Data at any time.
+- It runs under Chrome's Manifest V3 and Content Security Policy and does not load remote code.
 
-**Account Deletion**  
-To delete your account and all associated data, please contact us at bill.kiani@outlook.com. We will purge your data within 30 days.
+- It reads the content of the page you are on only when you activate Genie, and only what is needed for the result you asked for.
 
-## Personal Data of Children
+- It does not collect your browsing history, and it switches itself off on payment, banking and other sensitive pages.
 
-We do not knowingly collect or solicit Personal Data about children under 13 years of age; if you are a child under the age of 13, please do not attempt to register for or otherwise use our extension or send us any Personal Data. If we learn we have collected Personal Data from a child under 13 years of age, we will delete that information as quickly as possible.
+- It stores your preferences and sign-in session in the browser's extension storage on your device.
 
-## State Law Privacy Rights
+## Cookies and website analytics
 
-**California Resident Rights**
+genie007.com uses essential cookies and privacy-friendly product analytics to understand which pages are read. You can block or delete cookies in your browser settings.
 
-Under California Civil Code Sections 1798.83-1798.84, California residents are entitled to contact us to prevent disclosure of Personal Data to third parties for such third parties' direct marketing purposes.
+## United States residents
 
-**Nevada Resident Rights**
+We do not sell personal information. California residents may ask us not to disclose personal data to third parties for their direct marketing (Civil Code Sections 1798.83 to 1798.84). Nevada residents may opt out of sales as defined in Nevada Revised Statutes Chapter 603A; we make no such sales.
 
-If you are a resident of Nevada, you have the right to opt-out of the sale of certain Personal Data to third parties who intend to license or sell that Personal Data. Please note that we do not currently sell your Personal Data as sales are defined in Nevada Revised Statutes Chapter 603A.
+## Changes to this policy
 
-## Browser Extension Information
+When we change this policy we post the new version here with a new version number and date. If a change is material, we also email account holders.
 
-Our extension uses only the permissions necessary to provide its functionality. These permissions are used only when you actively engage with our extension and are designed to minimize data access while providing a seamless experience. Our extension automatically disables itself on payment processing pages, banking sites, and other sensitive domains.
+## Contact
 
-## How Genie AI Works With Your Browser
-- Local Storage: We save your preferences and login info directly on your device
-- Background Processing: Handles authentication and keeps your session active
-- Page Integration: Allows Genie to work with text fields and content when you activate it
-- Side Panel Access: Provides the Genie interface alongside your browsing
-- Current Page Access: Reads content only from the page you're actively using, only when you click Genie
-- Secure Sign-in: Enables Google/email authentication
-- Website Compatibility: Works on supported sites like Gmail, LinkedIn, Twitter, GitHub, Slack, and WhatsApp Web
-
-## Changes to this Privacy Policy
-
-We're constantly trying to improve our extension, so we may need to change this Privacy Policy from time to time, but we will alert you to any such changes by placing a notice on the Genie AI website, by sending you an email, and/or by some other means. If you use the extension after any changes to the Privacy Policy have been posted, that means you agree to all of the changes.
-
-## Contact Information
-
-If you have any questions or comments about this Privacy Policy, the ways in which we collect and use your Personal Data, or your choices and rights regarding such collection and use, please contact us at bill.kiani@outlook.com.
+Privacy questions and requests: [support@genie007.com](mailto:support@genie007.com)
